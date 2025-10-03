@@ -1,0 +1,388 @@
+/* .main-page 
+{
+      height: 30%;           
+      background-color: hsla(120, 61%, 75%, 0.705);
+      padding: 20px;         
+      margin: 0px;             
+      box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh; 
+  
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: hsla(120, 75%, 0.705);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
+}
+
+
+nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      flex-direction: row;
+      background: hsla(47, 56%, 45%, 0.764);
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      border-radius: 5px;
+    }
+nav ul.show {
+      display: flex;
+    }
+nav li {
+      padding: 10px;
+      text-align: center;
+    }
+
+nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+.menu-icon {
+      
+      flex-direction: column;
+      cursor: pointer;
+      
+    }
+
+.menu-icon div {
+      width: 25px;
+      height: 3px;
+      background: hsl(58, 57%, 9%);
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+.Anime-stuff {
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;   
+  color: #ff4500;    
+  text-transform: uppercase; 
+  letter-spacing: 2px;  
+  text-align: center;     
+}
+.log-in
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: hsl(0, 0%, 0%);
+  border: none;
+  color: hsl(0, 67%, 9%);
+  padding: 6px 10px;
+  margin: 6px;
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: hsla(112, 25%, 24%, 0.592);
+}
+.sign-up
+{
+  position: absolute;
+  border: none;
+  top: 0;
+  left: 70;
+  background: rgb(67, 126, 67);
+  color: hsl(231, 72%, 26%);
+  padding: 6px 10px;
+  margin: 6px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: hsl(52, 17%, 51%);
+}
+.product-grid {
+  background-color: rgb(22, 56, 17);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  height: 66vh;
+  padding: 10px;
+}
+
+.product {
+  background-color: hsl(112, 39%, 69%);
+  border: 1px solid hsl(120, 60%, 1%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.img-idols {
+  border-radius: 5px;
+  display: flex;
+  justify-items: auto;
+  justify-content:center;
+}
+.key-chain{
+  border-radius: 5px;
+  display: flex;
+  justify-items: auto;
+  justify-content:center;
+}
+.idol{
+  border-radius: 5px;
+  display: flex;
+  justify-items: auto;
+  justify-content:center;
+}
+.tshirt{
+  border-radius: 5px;
+  display: flex;
+  justify-items: auto;
+  justify-content:center;
+} */
+
+/* Reset & Body */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a; /* dark navy */
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------- HEADER (30% height) ---------------- */
+.main-page {
+  height: 30vh;
+  background: linear-gradient(90deg, #ff9800, #cddc39);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.anime-stuff {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 12px;
+  color: #fff;
+  text-shadow: 0 0 8px #ff0080, 0 0 16px #ff0080, 0 0 24px #ff0080;
+
+  /* animated background */
+  background: linear-gradient(270deg, #ff0080, #ff8c00, #40e0d0, #8a2be2);
+  background-size: 800% 800%;
+  animation: gradientMove 8s ease infinite, glowPulse 2s ease-in-out infinite;
+}
+
+/* background gradient animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* glow pulsing animation */
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 6px #fff, 0 0 12px #ff0080, 0 0 24px #ff0080;
+  }
+  50% {
+    text-shadow: 0 0 12px #fff, 0 0 24px #ff8c00, 0 0 36px #ff8c00;
+  }
+}
+
+
+
+
+/* ---------------- NAVBAR ---------------- */
+nav {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(0,0,0,0.8);
+  padding: 15px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff4081;
+}
+
+/* Hamburger */
+.menu-icon {
+  cursor: pointer;
+  width: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-icon div {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.show-menu {
+  display: flex !important;
+}
+
+/* ---------------- LOGIN / SIGNUP ---------------- */
+.log-in, .sign-up {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.log-in {
+  background: #f44336;
+  color: white;
+  margin-right: 10px;
+}
+
+.sign-up {
+  background: #00c853;
+  color: white;
+  margin-left: 100px;
+}
+
+.log-in:hover,
+.sign-up:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- CONTENT (70% height) ---------------- */
+.content {
+  height: 70vh;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.product {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 15px;
+  text-align: center;
+  border-radius: 14px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* The grid controls spacing */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 100px; /* 👈 spacing between cards */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.product img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  
+  border-radius: 20px;
+  margin-top: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+/* Reset link color inside product cards */
+.product a {
+  color: rgb(184, 118, 118);
+  text-decoration: none;  /* removes underline */
+  font-weight: 600;
+}
+
+/* If you want hover effect */
+.product a:hover {
+  color: #ffcc00;  /* anime-style yellow highlight */
+}
+#img-idols {
+  height: 270;
+ color: white;
+}
+/* ---------- Fix when anchor wraps the .product DIV (current markup) ---------- */
+/* Target .product that is a direct child of an <a> */
+a > .product {
+  color: #ffffff;                 /* make text white */
+  text-decoration: none;          /* remove underline */
+  display: block;   
+  padding: 0px;              /* make card behave like block inside the link */
+}
+
+/* Ensure all text inside the product is white (stronger rule) */
+a > .product, 
+a > .product * {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Keep hover highlight if you want */
+a > .product:hover {
+  color: #ffcc00 !important;
+}
+p{
+  padding: 50px;
+  font-size: large;
+  font-style: oblique;
+}

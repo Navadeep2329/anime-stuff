@@ -1,0 +1,71 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart - Anime Stuff</title>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cartpage.css">
+</head>
+<body>
+
+<header class="cart-header">
+  <h1 class="anime-stuff">Your Cart</h1>
+  <a href="/Main Page/mainpage.html"><button class="go-back">Back to Shop</button></a>
+</header>
+
+<main class="cart-content">
+  <table class="cart-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="cart-items">
+      JS will populate this 
+    </tbody>
+  </table>
+
+  <div class="cart-summary">
+    <h2>Total: $<span id="cart-total">0.00</span></h2>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  </div>
+</main> -->
+
+<!-- <script src="cartpage.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Anime Stuff</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cartpage.css">
+</head>
+<body>
+  <header class="cart-header">
+    <h1 class="anime-stuff">Your Cart</h1>
+    <a href="/Main Page/mainpage.html"><button class="go-back">Back to Shop</button></a>
+  </header>
+
+  <main class="cart-content">
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <h2>Total: $<span id="cart-total">0.00</span></h2>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </main>
+
+  <script src="cartpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background: hsl(62, 41%, 70%);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
+}
+
+/* Grid layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Product card */
+.product {
+  background: #8bcee8;
+  border: 2px solid #b8c3a4;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px hsl(0, 19%, 7%);
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  text-align: left; /* aligns description text properly */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  border-color: #05184b;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.bold {
+  color: #db2e2e;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Buttons */
+button {
+  background: hsl(303, 10%, 38%);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px 3px 0 0;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #244b62;
+}
+
+/* Previous page button */
+body > button {
+  margin-top: 30px;
+  background: #444;
+}
+
+body > button:hover {
+  background: #222;
+}

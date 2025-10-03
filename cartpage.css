@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+  color: white;
+}
+
+.cart-header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff4081, #ff9100);
+}
+
+.anime-stuff {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.go-back {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.cart-content {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cart-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cart-card {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-card img {
+  width: 20%;
+  /* max-height: 180px; */
+  /* object-fit: cover; */
+  border-radius: 8px;
+}
+
+.cart-card h3 {
+  margin: 10px 0;
+}
+
+.cart-card .price {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.cart-card input.qty {
+  width: 60px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.remove-btn {
+  margin-top: 10px;
+  background: crimson;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-summary {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.checkout-btn {
+  margin-top: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff4081, #ff9100);
+  color: white;
+  cursor: pointer;
+}

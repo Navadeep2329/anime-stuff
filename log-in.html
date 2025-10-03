@@ -1,0 +1,173 @@
+<!-- <html>
+  <head>
+    <title>Login Page</title>
+  </head>
+  <style>
+    *{
+      text-align: center;
+      padding: 10px;
+      margin: 0px;
+    }
+    h1{
+      color: black;
+      font-family: arial, sans-serif;
+    }
+    body{
+      background-color: hsl(209, 61%, 74%);
+    }
+    .btn, .go-back {
+      border: none;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px hsl(213, 51%, 48%);
+      transition: hsl(213, 67%, 60%) 0.1s ease-in 0.6s, transform 0.1s ease-in 0.6s;
+    }
+    .btn:hover, .go-back:hover{
+      background-color: hsl(209, 61%, 74%);
+      transform: scale(1.05);
+    }
+    .btn:active, .go-back:active {
+  transform: scale(0.95);                /* slightly smaller when clicked */
+  background-color: hsl(209, 61%, 64%);  /* darker when clicked */
+}
+  </style>
+  <body>
+    <h1>
+      Login
+    </h1>
+    <form>
+      <label><b>UserName: </b><input type="text" id="username" placeholder="John Bob"></label>
+      <br><br>
+      <label><b>Passowrd: </b><input type="password" id="password"></label>
+      <br><br>
+      <button type="button" onclick="login()" class="btn">
+        Login
+      </button>
+      <a href="/Main Page/mainpage.html">
+      <button type="button" class="go-back" >
+        Go Back
+      </button>
+      </a>
+      
+    </form>
+  </body>
+  <script>
+    function login()
+    {
+        
+  // get values from input fields
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+
+  // simple validation (example)
+  if(username === "" || password === "") {
+    alert("Please enter both username and password.");
+    return;
+  }
+
+  // Example: hardcoded check (for demo purposes)
+  if(username === "John" && password === "1234") {
+    alert("Login successful!");
+    window.location.reload();
+    // window.location.href = "mainpage.html";
+    // window.location.href = "Dusserah project/mainpage.html";
+
+    // redirect to another page
+  } else {
+    alert("Invalid username or password!");
+  
+}
+
+    }
+  </script>
+</html> -->
+
+<html>
+  <head>
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background: linear-gradient(120deg, #1a1a2e, #0f3460, #533483);
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        background: rgba(255,255,255,0.1);
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+        text-align: center;
+      }
+      h1 {
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      label {
+        display: block;
+        margin: 10px 0;
+      }
+      input {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        width: 80%;
+        margin-top: 5px;
+      }
+      .btn, .go-back {
+        margin: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: transform 0.3s, background 0.3s;
+      }
+      .btn {
+        background: #e94560;
+        color: white;
+      }
+      .go-back {
+        background: #1dd1a1;
+        color: white;
+      }
+      .btn:hover, .go-back:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h1>Login</h1>
+      <label><b>Username:</b><br><input type="text" id="username" placeholder="John Bob"></label>
+      <label><b>Password:</b><br><input type="password" id="password"></label>
+      <br>
+      <button type="button" onclick="login()" class="btn">Login</button>
+      <a href="/Main Page/mainpage.html"><button type="button" class="go-back">Go Back</button></a>
+    </form>
+
+    <script>
+      function login() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if(username === "" || password === "") {
+          alert("Please enter both username and password.");
+          return;
+        }
+
+        if(username === "John" && password === "1234") {
+          alert("Login successful!");
+          window.location.href = "mainpage.html";
+        } else {
+          alert("Invalid username or password!");
+        }
+      }
+    </script>
+  </body>
+</html>
